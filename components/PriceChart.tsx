@@ -1,5 +1,4 @@
 'use client'
-import { ResponsiveLine } from '@nivo/line'
 import { useQuery } from '@tanstack/react-query'
 
 type Props = { symbol: 'WTI' | 'BRENT' | 'XAU', title?: string }
@@ -54,68 +53,6 @@ export default function PriceChart({ symbol, title }: Props) {
         )}
       </div>
       
-      <div className="h-16">
-        {isLoading ? (
-          <div className="flex items-center justify-center h-full bg-gray-800/30 rounded-md">
-            <div className="flex items-center gap-2">
-              <div className="w-3 h-3 border-2 border-primary-500 border-t-transparent rounded-full animate-spin"></div>
-              <span className="text-xs text-gray-300">로딩 중...</span>
-            </div>
-          </div>
-        ) : data?.points?.length ? (
-          <ResponsiveLine
-            data={[{ id: symbol, data: data?.points ?? [] }]}
-            margin={{ top: 10, right: 20, bottom: 20, left: 40 }}
-            xScale={{ type: 'point' }}
-            yScale={{ type: 'linear', stacked: false }}
-            colors={[symbolColor]}
-            lineWidth={2}
-            axisBottom={{ 
-              tickSize: 0, 
-              tickPadding: 5,
-              tickValues: [],
-              domainLine: { stroke: '#e2e8f0', strokeWidth: 1 }
-            }}
-            axisLeft={{ 
-              tickSize: 0, 
-              tickPadding: 5,
-              domainLine: { stroke: '#e2e8f0', strokeWidth: 1 },
-              tickColor: '#94a3b8'
-            }}
-            enablePoints={false}
-            useMesh
-            enableGridX={false}
-            enableGridY={true}
-            gridYValues={4}
-            animate
-            theme={{
-              grid: {
-                line: {
-                  stroke: '#f1f5f9',
-                  strokeWidth: 1
-                }
-              },
-              axis: {
-                ticks: {
-                  text: {
-                    fontSize: 10,
-                    fill: '#94a3b8'
-                  }
-                }
-              }
-            }}
-          />
-        ) : (
-          <div className="flex items-center justify-center h-full bg-gray-800/30 rounded-md">
-            <div className="text-center">
-              <div className="w-6 h-6 bg-gray-700 rounded-md flex items-center justify-center mx-auto mb-1">
-                <span className="text-gray-300 text-xs">📊</span>
-              </div>
-              <span className="text-xs text-gray-400">데이터 없음</span>
-            </div>
-          </div>
-        )}
-      </div>
     </div>
   )
 }

@@ -2,12 +2,15 @@
 import MapView from '@/components/MapView'
 import PriceChart from '@/components/PriceChart'
 import SummaryCard from '@/components/SummaryCard'
+import AuthGuard from '@/components/AuthGuard'
+import UserProfile from '@/components/UserProfile'
 import { useUI } from '@/stores/ui'
 
 export default function Page() {
   const { timeWindowHours, setTimeWindow } = useUI()
   return (
-    <main className="h-screen bg-black flex flex-col">
+    <AuthGuard>
+      <main className="h-screen bg-black flex flex-col">
       {/* 팔란티어 스타일 헤더 */}
       <header className="bg-gray-900 border-b border-gray-700 flex-shrink-0">
         <div className="flex items-center justify-between px-6 h-12">
@@ -32,12 +35,13 @@ export default function Page() {
             </div>
           </div>
           
-          {/* 오른쪽 검색 */}
+          {/* 오른쪽 검색 및 사용자 프로필 */}
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-2 px-3 py-1.5 bg-gray-800 rounded border border-gray-600">
               <span className="text-gray-400 text-xs">검색...</span>
               <span className="text-gray-500 text-xs">Ctrl Space</span>
             </div>
+            <UserProfile />
             <div className="flex items-center gap-1">
               <div className="w-3 h-3 bg-gray-600 rounded-full cursor-pointer hover:bg-gray-500"></div>
               <div className="w-3 h-3 bg-gray-600 rounded-full cursor-pointer hover:bg-gray-500"></div>
@@ -211,5 +215,6 @@ export default function Page() {
         </div>
       </div>
     </main>
+    </AuthGuard>
   )
 }
