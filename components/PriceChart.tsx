@@ -59,7 +59,7 @@ export default function PriceChart({ symbol, title }: Props) {
           <div className="flex items-center justify-center h-full bg-gray-800/30 rounded-md">
             <div className="flex items-center gap-2">
               <div className="w-3 h-3 border-2 border-primary-500 border-t-transparent rounded-full animate-spin"></div>
-              <span className="text-xs text-gray-300">Loading...</span>
+              <span className="text-xs text-gray-300">로딩 중...</span>
             </div>
           </div>
         ) : data?.points?.length ? (
@@ -111,7 +111,7 @@ export default function PriceChart({ symbol, title }: Props) {
               <div className="w-6 h-6 bg-gray-700 rounded-md flex items-center justify-center mx-auto mb-1">
                 <span className="text-gray-300 text-xs">📊</span>
               </div>
-              <span className="text-xs text-gray-400">No data</span>
+              <span className="text-xs text-gray-400">데이터 없음</span>
             </div>
           </div>
         )}

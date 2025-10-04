@@ -1,4 +1,7 @@
 {
   "/page": "app/page.js",
-  "/api/events/route": "app/api/events/route.js"
+  "/api/summary/route": "app/api/summary/route.js",
+  "/api/prices/[symbol]/route": "app/api/prices/[symbol]/route.js",
+  "/api/events/route": "app/api/events/route.js",
+  "/api/reliefweb/reports/route": "app/api/reliefweb/reports/route.js"
 }

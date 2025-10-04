@@ -66,26 +66,26 @@ export default function MapView() {
         <div className="flex items-center gap-2">
           <div className="w-2 h-2 bg-primary-500 rounded-full animate-pulse"></div>
           <span className="text-xs font-medium text-gray-200">
-            {eventCount} Active Events
+            {eventCount}개 활성 이벤트
           </span>
         </div>
       </div>
 
       {/* 팔란티어 스타일 범례 */}
       <div className="absolute bottom-4 right-4 z-10 bg-gray-900/90 backdrop-blur-sm rounded px-3 py-2 space-y-2 border border-gray-700">
-        <div className="text-xs font-semibold text-white mb-1">SEVERITY</div>
+        <div className="text-xs font-semibold text-white mb-1">심각도</div>
         <div className="space-y-1">
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-primary-400 rounded-full"></div>
-            <span className="text-xs text-gray-300">Low</span>
+            <span className="text-xs text-gray-300">낮음</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-primary-500 rounded-full"></div>
-            <span className="text-xs text-gray-300">Medium</span>
+            <span className="text-xs text-gray-300">보통</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-primary-600 rounded-full"></div>
-            <span className="text-xs text-gray-300">High</span>
+            <span className="text-xs text-gray-300">높음</span>
           </div>
         </div>
       </div>
@@ -95,7 +95,7 @@ export default function MapView() {
         <div className="absolute inset-0 bg-gray-950/80 backdrop-blur-sm flex items-center justify-center z-20">
           <div className="flex items-center gap-3">
             <div className="w-4 h-4 border-2 border-primary-500 border-t-transparent rounded-full animate-spin"></div>
-            <span className="text-sm font-medium text-white">Loading intelligence data...</span>
+            <span className="text-sm font-medium text-white">정보 데이터 로딩 중...</span>
           </div>
         </div>
       )}

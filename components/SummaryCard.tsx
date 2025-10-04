@@ -17,7 +17,7 @@ export default function SummaryCard() {
         <div className="flex items-center justify-center h-40">
           <div className="flex items-center gap-3">
             <div className="w-4 h-4 border-2 border-primary-500 border-t-transparent rounded-full animate-spin"></div>
-            <span className="text-sm text-gray-300">Generating intelligence...</span>
+            <span className="text-sm text-gray-300">정보 생성 중...</span>
           </div>
         </div>
       ) : (
@@ -25,16 +25,16 @@ export default function SummaryCard() {
           <div className="bg-gradient-to-r from-primary-900/10 to-primary-800/10 rounded-md p-4 border border-primary-700/20 backdrop-blur-sm">
             <div className="flex items-center gap-2 mb-3">
               <div className="w-2 h-2 bg-primary-500 rounded-full animate-pulse"></div>
-              <span className="text-xs font-semibold text-primary-300 uppercase tracking-wide">INTELLIGENCE</span>
+              <span className="text-xs font-semibold text-primary-300 uppercase tracking-wide">정보</span>
             </div>
             <p className="text-sm leading-relaxed text-gray-200 whitespace-pre-wrap">
-              {data?.summary ?? 'No intelligence data available.'}
+              {data?.summary ?? '사용 가능한 정보 데이터가 없습니다.'}
             </p>
           </div>
           
           {data?.sources && data.sources.length > 0 && (
             <div className="space-y-3">
-              <h4 className="text-xs font-semibold text-gray-300 uppercase tracking-wide">SOURCES</h4>
+              <h4 className="text-xs font-semibold text-gray-300 uppercase tracking-wide">출처</h4>
               <div className="space-y-2">
                 {data.sources.map((source, i) => (
                   <div key={i} className="flex items-start gap-2 p-2 bg-gray-800/20 rounded-md hover:bg-gray-800/40 transition-all duration-200 border border-gray-700/10">
