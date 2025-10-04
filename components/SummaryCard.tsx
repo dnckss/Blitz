@@ -32,26 +32,7 @@ export default function SummaryCard() {
             </p>
           </div>
           
-          {data?.sources && data.sources.length > 0 && (
-            <div className="space-y-3">
-              <h4 className="text-xs font-semibold text-gray-300 uppercase tracking-wide">출처</h4>
-              <div className="space-y-2">
-                {data.sources.map((source, i) => (
-                  <div key={i} className="flex items-start gap-2 p-2 bg-gray-800/20 rounded-md hover:bg-gray-800/40 transition-all duration-200 border border-gray-700/10">
-                    <div className="w-1 h-1 bg-primary-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <a 
-                      href={source.url} 
-                      target="_blank" 
-                      rel="noreferrer"
-                      className="text-xs text-gray-300 hover:text-primary-400 transition-colors line-clamp-2 leading-relaxed"
-                    >
-                      {source.title}
-                    </a>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
+        
         </div>
       )}
     </div>

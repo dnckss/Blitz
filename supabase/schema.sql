@@ -36,12 +36,14 @@ create table if not exists ai_summaries (
   sources jsonb
 );
 
--- Community
+-- User profiles (linked to auth.users)
 create table if not exists profiles (
-  id uuid primary key default gen_random_uuid(),
-  email text unique,
+  id uuid primary key references auth.users(id) on delete cascade,
+  email text,
   display_name text,
-  created_at timestamptz default now()
+  avatar_url text,
+  created_at timestamptz default now(),
+  updated_at timestamptz default now()
 );
 
 create table if not exists posts (
@@ -60,3 +62,19 @@ create table if not exists comments (
   body text not null,
   created_at timestamptz default now()
 );
+
+-- Function to handle new user signup
+create or replace function public.handle_new_user()
+returns trigger as $$
+begin
+  insert into public.profiles (id, email, display_name)
+  values (new.id, new.email, coalesce(new.raw_user_meta_data->>'display_name', split_part(new.email, '@', 1)));
+  return new;
+end;
+$$ language plpgsql security definer;
+
+-- Trigger to automatically create profile on user signup
+drop trigger if exists on_auth_user_created on auth.users;
+create trigger on_auth_user_created
+  after insert on auth.users
+  for each row execute procedure public.handle_new_user();

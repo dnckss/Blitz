@@ -2,6 +2,7 @@
 import MapView from '@/components/MapView'
 import PriceChart from '@/components/PriceChart'
 import SummaryCard from '@/components/SummaryCard'
+import MarketTrends from '@/components/MarketTrends'
 import AuthGuard from '@/components/AuthGuard'
 import UserProfile from '@/components/UserProfile'
 import { useUI } from '@/stores/ui'
@@ -17,36 +18,15 @@ export default function Page() {
           {/* 왼쪽 네비게이션 */}
           <div className="flex items-center gap-8">
             <div className="flex items-center gap-6">
-              <span className="text-white text-sm font-medium border-b-2 border-primary-500 pb-1">글로벌 개요</span>
-              <span className="text-gray-400 text-sm hover:text-white cursor-pointer">상황</span>
-              <span className="text-gray-400 text-sm hover:text-white cursor-pointer">작전</span>
-              <span className="text-gray-400 text-sm hover:text-white cursor-pointer">데이터</span>
-            </div>
-            <div className="flex items-center gap-3">
-              <div className="w-6 h-6 bg-gray-700 rounded flex items-center justify-center hover:bg-gray-600 cursor-pointer">
-                <span className="text-gray-300 text-xs">🔍</span>
-              </div>
-              <div className="w-6 h-6 bg-gray-700 rounded flex items-center justify-center hover:bg-gray-600 cursor-pointer">
-                <span className="text-gray-300 text-xs">⚙</span>
-              </div>
-              <div className="w-6 h-6 bg-gray-700 rounded flex items-center justify-center hover:bg-gray-600 cursor-pointer">
-                <span className="text-gray-300 text-xs">↻</span>
-              </div>
+              <span className="text-white text-sm font-medium ">글로벌 개요</span>
             </div>
           </div>
           
           {/* 오른쪽 검색 및 사용자 프로필 */}
           <div className="flex items-center gap-4">
-            <div className="flex items-center gap-2 px-3 py-1.5 bg-gray-800 rounded border border-gray-600">
-              <span className="text-gray-400 text-xs">검색...</span>
-              <span className="text-gray-500 text-xs">Ctrl Space</span>
-            </div>
+            
             <UserProfile />
-            <div className="flex items-center gap-1">
-              <div className="w-3 h-3 bg-gray-600 rounded-full cursor-pointer hover:bg-gray-500"></div>
-              <div className="w-3 h-3 bg-gray-600 rounded-full cursor-pointer hover:bg-gray-500"></div>
-              <div className="w-3 h-3 bg-gray-600 rounded-full cursor-pointer hover:bg-gray-500"></div>
-            </div>
+           
           </div>
         </div>
       </header>
@@ -71,7 +51,7 @@ export default function Page() {
             <div className="border-b border-gray-700 pb-4">
               <div className="flex items-center justify-between mb-3">
                 <h3 className="text-white text-sm font-medium">에너지</h3>
-                <span className="text-gray-400 text-xs">⚡</span>
+                
               </div>
               <div className="space-y-3">
                 <PriceChart symbol="WTI" title="WTI 원유" />
@@ -83,35 +63,20 @@ export default function Page() {
             <div className="border-b border-gray-700 pb-4">
               <div className="flex items-center justify-between mb-3">
                 <h3 className="text-white text-sm font-medium">귀금속</h3>
-                <span className="text-gray-400 text-xs">🥇</span>
+                
               </div>
               <div className="space-y-3">
                 <PriceChart symbol="XAU" title="금 (XAU/USD)" />
               </div>
             </div>
 
-            {/* 시장 요약 */}
+            {/* 시장 동향 */}
             <div>
               <div className="flex items-center justify-between mb-3">
                 <h3 className="text-white text-sm font-medium">시장 동향</h3>
-                <span className="text-gray-400 text-xs">📊</span>
+                <div className="w-2 h-2 bg-primary-500 rounded-full animate-pulse"></div>
               </div>
-              <div className="space-y-2">
-                <div className="p-3 bg-gray-800 rounded border border-gray-600">
-                  <div className="flex items-center justify-between mb-1">
-                    <span className="text-gray-300 text-xs">전체 시장</span>
-                    <span className="text-green-400 text-xs font-medium">+2.3%</span>
-                  </div>
-                  <p className="text-gray-400 text-xs">지역 갈등 우려로 안전자산 선호</p>
-                </div>
-                <div className="p-3 bg-gray-800 rounded border border-gray-600">
-                  <div className="flex items-center justify-between mb-1">
-                    <span className="text-gray-300 text-xs">원유 가격</span>
-                    <span className="text-red-400 text-xs font-medium">-1.8%</span>
-                  </div>
-                  <p className="text-gray-400 text-xs">공급 우려로 인한 변동성 증가</p>
-                </div>
-              </div>
+              <MarketTrends />
             </div>
           </div>
         </div>
