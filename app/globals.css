@@ -1,0 +1,93 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 248 250 252;
+  --fg: 15 23 42;
+  --border: 226 232 240;
+  --card: 255 255 255;
+  --primary: 239 68 68; /* 붉은색 계열 primary 색상 */
+}
+
+html, body, #__next { 
+  height: 100%; 
+}
+
+body {
+  color: rgb(var(--fg));
+  background: rgb(var(--bg));
+  font-family: 'Pretendard', system-ui, -apple-system, sans-serif;
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  font-variant-numeric: tabular-nums;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* { 
+  box-sizing: border-box; 
+}
+
+/* 토스증권 스타일 유틸리티 클래스 */
+@layer components {
+  .card-toss {
+    @apply bg-toss-800/80 backdrop-blur-sm rounded-2xl shadow-toss border border-toss-700/50;
+  }
+  
+  .card-toss-lg {
+    @apply bg-toss-800/80 backdrop-blur-sm rounded-3xl shadow-toss-lg border border-toss-700/50;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-500 hover:bg-primary-600 text-white font-medium px-4 py-2 rounded-xl transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-toss-100 hover:bg-toss-200 text-toss-700 font-medium px-4 py-2 rounded-xl transition-colors duration-200;
+  }
+  
+  .text-success {
+    @apply text-success-500;
+  }
+  
+  .text-danger {
+    @apply text-danger-500;
+  }
+  
+  .text-warning {
+    @apply text-warning-500;
+  }
+  
+  .bg-success-light {
+    @apply bg-success-50;
+  }
+  
+  .bg-danger-light {
+    @apply bg-danger-50;
+  }
+  
+  .bg-warning-light {
+    @apply bg-warning-50;
+  }
+}
+
+/* 스크롤바 스타일링 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(248 250 252);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(203 213 225);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(148 163 184);
+}
