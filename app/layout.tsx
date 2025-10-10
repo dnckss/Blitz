@@ -3,8 +3,7 @@ import RQProvider from '@/providers/query-client'
 import { ReactNode } from 'react'
 
 export const metadata = {
-  title: 'WarMap | 전쟁 & 원자재 모니터링',
-  description: '실시간 전쟁 상황과 원자재 가격을 한눈에 확인하세요.'
+  title: 'Blitz'
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
