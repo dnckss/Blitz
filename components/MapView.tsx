@@ -132,55 +132,10 @@ export default function MapView() {
   return (
     <div className="relative h-full bg-gray-950 overflow-hidden">
       {/* 팔란티어 스타일 지도 오버레이 */}
-      <div className="absolute top-4 left-4 z-10 bg-gray-900/90 backdrop-blur-sm rounded px-3 py-2 border border-gray-700 space-y-2">
-        <div className="flex items-center gap-2">
-          <div className="w-2 h-2 bg-primary-500 rounded-full animate-pulse"></div>
-          <span className="text-xs font-medium text-gray-200">
-            {eventCount}개 활성 이벤트
-          </span>
-        </div>
-        <div className="flex items-center gap-2">
-          <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
-          <span className="text-xs font-medium text-red-200">
-            {activeConflicts}개 활성 분쟁 지역
-          </span>
-        </div>
-      </div>
+     
 
       {/* 팔란티어 스타일 범례 */}
-      <div className="absolute bottom-4 right-4 z-10 bg-gray-900/90 backdrop-blur-sm rounded px-3 py-2 space-y-3 border border-gray-700">
-        <div className="text-xs font-semibold text-white mb-1">이벤트 심각도</div>
-        <div className="space-y-1">
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 bg-primary-400 rounded-full"></div>
-            <span className="text-xs text-gray-300">낮음</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 bg-primary-500 rounded-full"></div>
-            <span className="text-xs text-gray-300">보통</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 bg-primary-600 rounded-full"></div>
-            <span className="text-xs text-gray-300">높음</span>
-          </div>
-        </div>
-        
-        <div className="text-xs font-semibold text-white mb-1">분쟁 지역 강도</div>
-        <div className="space-y-1">
-          <div className="flex items-center gap-2">
-            <div className="w-3 h-1 bg-red-500/30 rounded"></div>
-            <span className="text-xs text-gray-300">낮음</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-3 h-1 bg-red-500/60 rounded"></div>
-            <span className="text-xs text-gray-300">보통</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-3 h-1 bg-red-500 rounded"></div>
-            <span className="text-xs text-gray-300">높음</span>
-          </div>
-        </div>
-      </div>
+     
 
       {/* 로딩 상태 */}
       {(isLoading || warZonesLoading) && (
@@ -284,6 +239,19 @@ export default function MapView() {
                 {selectedWarZone.description}
               </p>
             </div>
+
+            {/* 우크라이나 지역일 경우 영상 보기 버튼 */}
+            {selectedWarZone.country === '우크라이나' && (
+              <a
+                href="/war-videos"
+                className="mt-3 w-full px-4 py-2 bg-red-600 hover:bg-red-700 text-white text-xs font-medium rounded transition-colors flex items-center justify-center gap-2"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <polygon points="5,3 19,12 5,21 5,3"></polygon>
+                </svg>
+                실시간 전쟁 영상 보기
+              </a>
+            )}
           </div>
         </div>
       )}

@@ -18,7 +18,8 @@ export default function Page() {
           {/* 왼쪽 네비게이션 */}
           <div className="flex items-center gap-8">
             <div className="flex items-center gap-6">
-              <span className="text-white text-sm font-medium ">글로벌 개요</span>
+              <a href="/" className="text-white text-sm font-medium border-b-2 border-primary-500 pb-1">글로벌 개요</a>
+              <a href="/war-videos" className="text-gray-400 text-sm hover:text-white cursor-pointer transition-colors">전쟁</a>
             </div>
           </div>
           

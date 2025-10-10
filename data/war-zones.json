@@ -4,668 +4,573 @@
     {
       "type": "Feature",
       "properties": {
-        "region": "Gaza Strip",
-        "country": "Palestine",
-        "severity": "high",
-        "status": "ceasefire_tense",
-        "lastUpdate": "2025-10-05T10:30:00Z",
-        "intensity": 6.2,
-        "casualties": "moderate",
-        "description": "휴전 협상 중이지만 간헐적 충돌 지속"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [[
-          [34.2, 31.6],
-          [34.5, 31.6],
-          [34.5, 31.2],
-          [34.2, 31.2],
-          [34.2, 31.6]
-        ]]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "region": "West Bank",
-        "country": "Palestine",
-        "severity": "medium",
-        "status": "tension",
-        "lastUpdate": "2025-10-05T09:45:00Z",
-        "intensity": 5.8,
-        "casualties": "low",
-        "description": "정착촌 확장 지속, 국제적 압박 증가"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [[
-          [34.8, 32.5],
-          [35.5, 32.5],
-          [35.5, 31.2],
-          [34.8, 31.2],
-          [34.8, 32.5]
-        ]]
-      }
-    },
-    {
-      "type": "Feature", 
-      "properties": {
-        "region": "Donetsk",
-        "country": "Ukraine",
-        "severity": "extreme",
-        "status": "active_conflict", 
-        "lastUpdate": "2025-10-05T09:45:00Z",
-        "intensity": 9.2,
-        "casualties": "high",
-        "description": "러시아군의 공세 강화, 도네츠크 전선 격화"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [[
-          [37.8, 48.0],
-          [38.5, 48.0],
-          [38.5, 47.6],
-          [37.8, 47.6],
-          [37.8, 48.0]
-        ]]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "region": "Luhansk",
-        "country": "Ukraine",
-        "severity": "high",
+        "id": "gaza_city",
+        "name": "가자시티",
+        "country": "팔레스타인",
         "status": "active_conflict",
-        "lastUpdate": "2025-10-05T11:15:00Z",
-        "intensity": 8.1,
-        "casualties": "moderate",
-        "description": "드론 공격 증가, 우크라이나군 반격 강화"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [[
-          [38.2, 49.5],
-          [39.8, 49.5],
-          [39.8, 48.8],
-          [38.2, 48.8],
-          [38.2, 49.5]
-        ]]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "region": "Kherson",
-        "country": "Ukraine", 
-        "severity": "medium",
-        "status": "shelling",
-        "lastUpdate": "2025-10-05T08:20:00Z",
-        "intensity": 4.5,
-        "casualties": "low",
-        "description": "포격 빈도 감소, 안정화 조짐"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [[
-          [32.0, 46.8],
-          [33.2, 46.8],
-          [33.2, 46.2],
-          [32.0, 46.2],
-          [32.0, 46.8]
-        ]]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "region": "Zaporizhzhia",
-        "country": "Ukraine",
-        "severity": "medium", 
-        "status": "tension",
-        "lastUpdate": "2025-10-05T07:30:00Z",
-        "intensity": 3.8,
-        "casualties": "minimal",
-        "description": "군사적 긴장 완화, 대화 가능성 모색"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [[
-          [35.0, 47.8],
-          [36.5, 47.8],
-          [36.5, 47.2],
-          [35.0, 47.2],
-          [35.0, 47.8]
-        ]]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "region": "Yemen - Sanaa",
-        "country": "Yemen",
-        "severity": "high",
-        "status": "active_conflict",
-        "lastUpdate": "2025-10-05T06:45:00Z",
-        "intensity": 7.2,
-        "casualties": "moderate",
-        "description": "후티 반군 우세, 평화 협상 진행 중"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [[
-          [44.0, 15.5],
-          [44.5, 15.5],
-          [44.5, 15.2],
-          [44.0, 15.2],
-          [44.0, 15.5]
-        ]]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "region": "Yemen - Hodeidah",
-        "country": "Yemen",
-        "severity": "high",
-        "status": "active_conflict",
-        "lastUpdate": "2025-10-05T05:30:00Z",
-        "intensity": 6.8,
-        "casualties": "moderate",
-        "description": "호데이다 항구 통제권 분쟁 지속"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [[
-          [42.7, 14.8],
-          [43.2, 14.8],
-          [43.2, 14.5],
-          [42.7, 14.5],
-          [42.7, 14.8]
-        ]]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "region": "Syria - Idlib",
-        "country": "Syria",
-        "severity": "high",
-        "status": "shelling",
-        "lastUpdate": "2025-10-05T04:20:00Z",
-        "intensity": 6.5,
-        "casualties": "moderate",
-        "description": "이들립 공습 감소, 휴전 논의"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [[
-          [36.5, 35.8],
-          [37.2, 35.8],
-          [37.2, 35.4],
-          [36.5, 35.4],
-          [36.5, 35.8]
-        ]]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "region": "Syria - Aleppo",
-        "country": "Syria",
-        "severity": "medium",
-        "status": "tension",
-        "lastUpdate": "2025-10-05T03:15:00Z",
-        "intensity": 4.8,
-        "casualties": "low",
-        "description": "알레포 지역 안정화 진행"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [[
-          [37.0, 36.3],
-          [37.5, 36.3],
-          [37.5, 36.0],
-          [37.0, 36.0],
-          [37.0, 36.3]
-        ]]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "region": "Myanmar - Rakhine",
-        "country": "Myanmar",
-        "severity": "extreme",
-        "status": "active_conflict",
-        "lastUpdate": "2025-10-05T02:45:00Z",
-        "intensity": 9.5,
-        "casualties": "high",
-        "description": "아라칸군의 대규모 공세, 군부 후퇴"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [[
-          [92.5, 20.8],
-          [93.5, 20.8],
-          [93.5, 20.0],
-          [92.5, 20.0],
-          [92.5, 20.8]
-        ]]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "region": "Myanmar - Shan State",
-        "country": "Myanmar",
-        "severity": "extreme",
-        "status": "active_conflict",
-        "lastUpdate": "2025-10-05T01:30:00Z",
-        "intensity": 9.2,
-        "casualties": "high",
-        "description": "민족군 연합의 대공세, 군부 요새 돌파"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [[
-          [97.0, 23.5],
-          [98.5, 23.5],
-          [98.5, 22.5],
-          [97.0, 22.5],
-          [97.0, 23.5]
-        ]]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "region": "Ethiopia - Tigray",
-        "country": "Ethiopia",
-        "severity": "medium",
-        "status": "ceasefire_tense",
-        "lastUpdate": "2025-10-05T00:45:00Z",
-        "intensity": 3.2,
-        "casualties": "minimal",
-        "description": "휴전 협정 이행 중, 재건 작업 진행"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [[
-          [38.5, 14.5],
-          [40.0, 14.5],
-          [40.0, 13.5],
-          [38.5, 13.5],
-          [38.5, 14.5]
-        ]]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "region": "Sudan - Darfur",
-        "country": "Sudan",
-        "severity": "extreme",
-        "status": "active_conflict",
-        "lastUpdate": "2025-10-05T00:15:00Z",
-        "intensity": 9.8,
-        "casualties": "extreme",
-        "description": "RSF의 전면 공세, 인도적 재해 심화"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [[
-          [22.0, 15.5],
-          [25.0, 15.5],
-          [25.0, 12.5],
-          [22.0, 12.5],
-          [22.0, 15.5]
-        ]]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "region": "Sudan - Khartoum",
-        "country": "Sudan",
-        "severity": "extreme",
-        "status": "active_conflict",
-        "lastUpdate": "2025-10-04T23:30:00Z",
-        "intensity": 9.5,
-        "casualties": "extreme",
-        "description": "수도 지역 격렬한 전투, 민간인 대량 피해"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [[
-          [32.3, 15.7],
-          [32.8, 15.7],
-          [32.8, 15.4],
-          [32.3, 15.4],
-          [32.3, 15.7]
-        ]]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "region": "Afghanistan - Panjshir",
-        "country": "Afghanistan",
-        "severity": "high",
-        "status": "resistance",
-        "lastUpdate": "2025-10-04T22:45:00Z",
-        "intensity": 7.8,
-        "casualties": "moderate",
-        "description": "항저항군의 조직적 공격, 탈레반 진압 시도"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [[
-          [69.5, 35.8],
-          [70.2, 35.8],
-          [70.2, 35.2],
-          [69.5, 35.2],
-          [69.5, 35.8]
-        ]]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "region": "Mali - Northern Regions",
-        "country": "Mali",
-        "severity": "high",
-        "status": "insurgency",
-        "lastUpdate": "2025-10-04T21:30:00Z",
-        "intensity": 8.2,
-        "casualties": "moderate",
-        "description": "이슬람 반군의 공세 강화, 프랑스 철수 이후"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [[
-          [-5.0, 20.0],
-          [-1.0, 20.0],
-          [-1.0, 16.0],
-          [-5.0, 16.0],
-          [-5.0, 20.0]
-        ]]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "region": "Niger - Diffa Region",
-        "country": "Niger",
-        "severity": "high",
-        "status": "insurgency",
-        "lastUpdate": "2025-10-04T20:15:00Z",
-        "intensity": 7.5,
-        "casualties": "moderate",
-        "description": "보코하람의 교차 공격, 지역 안정성 악화"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [[
-          [11.0, 14.0],
-          [13.0, 14.0],
-          [13.0, 12.0],
-          [11.0, 12.0],
-          [11.0, 14.0]
-        ]]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "region": "Somalia - Mogadishu",
-        "country": "Somalia",
-        "severity": "high",
-        "status": "active_conflict",
-        "lastUpdate": "2025-10-04T19:45:00Z",
-        "intensity": 8.0,
-        "casualties": "high",
-        "description": "알샤바브의 수도 공격, 정부군 반격"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [[
-          [45.0, 2.5],
-          [45.5, 2.5],
-          [45.5, 2.0],
-          [45.0, 2.0],
-          [45.0, 2.5]
-        ]]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "region": "CAR - Bangui",
-        "country": "Central African Republic",
-        "severity": "medium",
-        "status": "unstable",
-        "lastUpdate": "2025-10-04T18:30:00Z",
-        "intensity": 5.5,
-        "casualties": "moderate",
-        "description": "반군과 정부군 간 간헐적 충돌"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [[
-          [18.3, 4.5],
-          [18.8, 4.5],
-          [18.8, 4.0],
-          [18.3, 4.0],
-          [18.3, 4.5]
-        ]]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "region": "DRC - North Kivu",
-        "country": "Democratic Republic of Congo",
-        "severity": "extreme",
-        "status": "active_conflict",
-        "lastUpdate": "2025-10-04T17:45:00Z",
+        "status_ko": "활성 분쟁",
         "intensity": 9.0,
-        "casualties": "extreme",
-        "description": "M23 반군의 대규모 공세, 정부군 후퇴"
+        "severity": "extreme",
+        "lastUpdate": "2025-10-10T09:00:00Z",
+        "description": "가자시티 북부 격전지"
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [28.5, 1.5],
-          [29.5, 1.5],
-          [29.5, 0.5],
-          [28.5, 0.5],
-          [28.5, 1.5]
-        ]]
+        "coordinates": [
+          [
+            [34.35, 31.60],
+            [34.55, 31.60],
+            [34.55, 31.40],
+            [34.35, 31.40],
+            [34.35, 31.60]
+          ]
+        ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "region": "DRC - Ituri",
-        "country": "Democratic Republic of Congo",
-        "severity": "high",
+        "id": "khan_younis",
+        "name": "칸유니스",
+        "country": "팔레스타인",
+        "status": "shelling",
+        "status_ko": "포격 중",
+        "intensity": 8.2,
+        "severity": "extreme",
+        "lastUpdate": "2025-10-10T09:00:00Z",
+        "description": "칸유니스 난민촌 포격"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [34.20, 31.40],
+            [34.40, 31.40],
+            [34.40, 31.25],
+            [34.20, 31.25],
+            [34.20, 31.40]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "rafah",
+        "name": "라파",
+        "country": "팔레스타인",
         "status": "active_conflict",
-        "lastUpdate": "2025-10-04T16:20:00Z",
-        "intensity": 8.5,
-        "casualties": "high",
-        "description": "지역 민족 그룹 간 대규모 충돌"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [[
-          [30.0, 2.5],
-          [31.0, 2.5],
-          [31.0, 1.5],
-          [30.0, 1.5],
-          [30.0, 2.5]
-        ]]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "region": "Cameroon - Northwest",
-        "country": "Cameroon",
-        "severity": "medium",
-        "status": "separatist_conflict",
-        "lastUpdate": "2025-10-04T15:30:00Z",
-        "intensity": 6.2,
-        "casualties": "moderate",
-        "description": "영어권 분리주의자와 정부군 간 충돌"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [[
-          [9.5, 7.0],
-          [11.0, 7.0],
-          [11.0, 5.5],
-          [9.5, 5.5],
-          [9.5, 7.0]
-        ]]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "region": "Nigeria - Northeast",
-        "country": "Nigeria",
-        "severity": "high",
-        "status": "insurgency",
-        "lastUpdate": "2025-10-04T14:45:00Z",
+        "status_ko": "활성 분쟁",
         "intensity": 7.8,
-        "casualties": "high",
-        "description": "보코하람과 정부군 간 지속적 충돌"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [[
-          [11.0, 13.0],
-          [14.0, 13.0],
-          [14.0, 10.0],
-          [11.0, 10.0],
-          [11.0, 13.0]
-        ]]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "region": "Libya - Tripoli",
-        "country": "Libya",
-        "severity": "medium",
-        "status": "political_conflict",
-        "lastUpdate": "2025-10-04T13:30:00Z",
-        "intensity": 5.5,
-        "casualties": "low",
-        "description": "정치적 불안정과 무력 충돌"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [[
-          [13.0, 32.8],
-          [13.5, 32.8],
-          [13.5, 32.5],
-          [13.0, 32.5],
-          [13.0, 32.8]
-        ]]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "region": "Bangladesh - Chittagong Hill Tracts",
-        "country": "Bangladesh",
-        "severity": "medium",
-        "status": "ethnic_conflict",
-        "lastUpdate": "2025-10-04T12:15:00Z",
-        "intensity": 4.8,
-        "casualties": "low",
-        "description": "지방군과 정부군 간 간헐적 충돌"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [[
-          [91.8, 23.0],
-          [92.5, 23.0],
-          [92.5, 22.0],
-          [91.8, 22.0],
-          [91.8, 23.0]
-        ]]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "region": "India - Manipur",
-        "country": "India",
         "severity": "high",
-        "status": "ethnic_conflict",
-        "lastUpdate": "2025-10-04T11:45:00Z",
+        "lastUpdate": "2025-10-10T09:00:00Z",
+        "description": "라파 검문소 인근 교전"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [34.15, 31.35],
+            [34.35, 31.35],
+            [34.35, 31.20],
+            [34.15, 31.20],
+            [34.15, 31.35]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bakhmut",
+        "name": "바흐무트",
+        "country": "우크라이나",
+        "status": "active_conflict",
+        "status_ko": "활성 분쟁",
+        "intensity": 9.5,
+        "severity": "extreme",
+        "lastUpdate": "2025-10-10T08:30:00Z",
+        "description": "바흐무트 인근 격전"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [37.85, 48.75],
+            [38.20, 48.75],
+            [38.20, 48.50],
+            [37.85, 48.50],
+            [37.85, 48.75]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "avdiivka",
+        "name": "아우디우카",
+        "country": "우크라이나",
+        "status": "active_conflict",
+        "status_ko": "활성 분쟁",
+        "intensity": 9.3,
+        "severity": "extreme",
+        "lastUpdate": "2025-10-10T08:30:00Z",
+        "description": "아우디우카 전선 교전"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [37.60, 48.25],
+            [37.90, 48.25],
+            [37.90, 48.00],
+            [37.60, 48.00],
+            [37.60, 48.25]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "donetsk_city",
+        "name": "도네츠크",
+        "country": "우크라이나",
+        "status": "shelling",
+        "status_ko": "포격 중",
+        "intensity": 8.8,
+        "severity": "extreme",
+        "lastUpdate": "2025-10-10T08:30:00Z",
+        "description": "도네츠크시 포격"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [37.65, 48.15],
+            [37.95, 48.15],
+            [37.95, 47.90],
+            [37.65, 47.90],
+            [37.65, 48.15]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "kharkiv",
+        "name": "하르키우",
+        "country": "우크라이나",
+        "status": "shelling",
+        "status_ko": "포격 중",
+        "intensity": 7.5,
+        "severity": "high",
+        "lastUpdate": "2025-10-10T08:30:00Z",
+        "description": "하르키우 북부 포격"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [36.10, 50.15],
+            [36.40, 50.15],
+            [36.40, 49.90],
+            [36.10, 49.90],
+            [36.10, 50.15]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sevastopol",
+        "name": "세바스토폴",
+        "country": "우크라이나",
+        "status": "shelling",
+        "status_ko": "포격 중",
+        "intensity": 7.8,
+        "severity": "high",
+        "lastUpdate": "2025-10-10T08:00:00Z",
+        "description": "세바스토폴 해군기지 타격"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [33.35, 44.75],
+            [33.65, 44.75],
+            [33.65, 44.50],
+            [33.35, 44.50],
+            [33.35, 44.75]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "idlib",
+        "name": "이들리브",
+        "country": "시리아",
+        "status": "active_conflict",
+        "status_ko": "활성 분쟁",
+        "intensity": 7.5,
+        "severity": "high",
+        "lastUpdate": "2025-10-10T07:45:00Z",
+        "description": "이들리브시 인근 교전"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [36.50, 36.05],
+            [36.75, 36.05],
+            [36.75, 35.80],
+            [36.50, 35.80],
+            [36.50, 36.05]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "aleppo_west",
+        "name": "알레포 서부",
+        "country": "시리아",
+        "status": "tension",
+        "status_ko": "긴장 고조",
+        "intensity": 6.2,
+        "severity": "high",
+        "lastUpdate": "2025-10-10T07:45:00Z",
+        "description": "알레포 서부 전선"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [37.00, 36.35],
+            [37.25, 36.35],
+            [37.25, 36.10],
+            [37.00, 36.10],
+            [37.00, 36.35]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sanaa",
+        "name": "사나",
+        "country": "예멘",
+        "status": "active_conflict",
+        "status_ko": "활성 분쟁",
+        "intensity": 8.0,
+        "severity": "extreme",
+        "lastUpdate": "2025-10-10T06:30:00Z",
+        "description": "사나 인근 공습"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [44.05, 15.50],
+            [44.30, 15.50],
+            [44.30, 15.25],
+            [44.05, 15.25],
+            [44.05, 15.50]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "hodeidah",
+        "name": "호데이다",
+        "country": "예멘",
+        "status": "shelling",
+        "status_ko": "포격 중",
         "intensity": 7.2,
-        "casualties": "moderate",
-        "description": "메이테이족과 쿠키족 간 종족 갈등 격화"
+        "severity": "high",
+        "lastUpdate": "2025-10-10T06:30:00Z",
+        "description": "호데이다 항구 포격"
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [93.8, 25.0],
-          [94.5, 25.0],
-          [94.5, 24.0],
-          [93.8, 24.0],
-          [93.8, 25.0]
-        ]]
+        "coordinates": [
+          [
+            [42.85, 14.95],
+            [43.10, 14.95],
+            [43.10, 14.70],
+            [42.85, 14.70],
+            [42.85, 14.95]
+          ]
+        ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "region": "Pakistan - Balochistan",
-        "country": "Pakistan",
+        "id": "sittwe",
+        "name": "시트웨",
+        "country": "미얀마",
+        "status": "active_conflict",
+        "status_ko": "활성 분쟁",
+        "intensity": 7.2,
         "severity": "high",
-        "status": "separatist_conflict",
-        "lastUpdate": "2025-10-04T10:30:00Z",
-        "intensity": 6.8,
-        "casualties": "moderate",
-        "description": "발루치 분리주의자와 정부군 간 충돌"
+        "lastUpdate": "2025-10-10T05:00:00Z",
+        "description": "시트웨 인근 교전"
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [64.0, 30.0],
-          [69.0, 30.0],
-          [69.0, 25.0],
-          [64.0, 25.0],
-          [64.0, 30.0]
-        ]]
+        "coordinates": [
+          [
+            [92.75, 20.30],
+            [93.00, 20.30],
+            [93.00, 20.05],
+            [92.75, 20.05],
+            [92.75, 20.30]
+          ]
+        ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "region": "Kashmir - Line of Control",
-        "country": "India/Pakistan",
-        "severity": "high",
-        "status": "border_conflict",
-        "lastUpdate": "2025-10-04T09:20:00Z",
+        "id": "maungdaw",
+        "name": "마웅도",
+        "country": "미얀마",
+        "status": "shelling",
+        "status_ko": "포격 중",
         "intensity": 6.5,
-        "casualties": "moderate",
-        "description": "인도-파키스탄 간 경계선 충돌"
+        "severity": "high",
+        "lastUpdate": "2025-10-10T05:00:00Z",
+        "description": "마웅도 지역 충돌"
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [73.5, 35.0],
-          [74.5, 35.0],
-          [74.5, 34.0],
-          [73.5, 34.0],
-          [73.5, 35.0]
-        ]]
+        "coordinates": [
+          [
+            [92.20, 20.95],
+            [92.45, 20.95],
+            [92.45, 20.70],
+            [92.20, 20.70],
+            [92.20, 20.95]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "khartoum",
+        "name": "하르툼",
+        "country": "수단",
+        "status": "active_conflict",
+        "status_ko": "활성 분쟁",
+        "intensity": 9.0,
+        "severity": "extreme",
+        "lastUpdate": "2025-10-10T04:30:00Z",
+        "description": "하르툼 시가전"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [32.40, 15.75],
+            [32.65, 15.75],
+            [32.65, 15.50],
+            [32.40, 15.50],
+            [32.40, 15.75]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "el_fasher",
+        "name": "엘파셔",
+        "country": "수단",
+        "status": "shelling",
+        "status_ko": "포격 중",
+        "intensity": 8.5,
+        "severity": "extreme",
+        "lastUpdate": "2025-10-10T04:30:00Z",
+        "description": "엘파셔 포위 공격"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [25.20, 13.80],
+            [25.45, 13.80],
+            [25.45, 13.55],
+            [25.20, 13.55],
+            [25.20, 13.80]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "juba",
+        "name": "주바",
+        "country": "남수단",
+        "status": "tension",
+        "status_ko": "긴장 고조",
+        "intensity": 6.5,
+        "severity": "high",
+        "lastUpdate": "2025-10-10T04:00:00Z",
+        "description": "주바 인근 부족 충돌"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [31.45, 5.00],
+            [31.70, 5.00],
+            [31.70, 4.75],
+            [31.45, 4.75],
+            [31.45, 5.00]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "goma",
+        "name": "고마",
+        "country": "콩고민주공화국",
+        "status": "active_conflict",
+        "status_ko": "활성 분쟁",
+        "intensity": 7.8,
+        "severity": "high",
+        "lastUpdate": "2025-10-10T03:30:00Z",
+        "description": "고마 인근 M23 반군 활동"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [29.10, -1.50],
+            [29.35, -1.50],
+            [29.35, -1.75],
+            [29.10, -1.75],
+            [29.10, -1.50]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "mogadishu",
+        "name": "모가디슈",
+        "country": "소말리아",
+        "status": "shelling",
+        "status_ko": "포격 중",
+        "intensity": 6.8,
+        "severity": "high",
+        "lastUpdate": "2025-10-10T03:00:00Z",
+        "description": "모가디슈 알샤바브 공격"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [45.25, 2.20],
+            [45.50, 2.20],
+            [45.50, 1.95],
+            [45.25, 1.95],
+            [45.25, 2.20]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "mekelle",
+        "name": "메켈레",
+        "country": "에티오피아",
+        "status": "tension",
+        "status_ko": "긴장 고조",
+        "intensity": 5.5,
+        "severity": "medium",
+        "lastUpdate": "2025-10-10T02:30:00Z",
+        "description": "메켈레 인근 산발적 충돌"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [39.35, 13.65],
+            [39.60, 13.65],
+            [39.60, 13.40],
+            [39.35, 13.40],
+            [39.35, 13.65]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "kabul",
+        "name": "카불",
+        "country": "아프가니스탄",
+        "status": "shelling",
+        "status_ko": "포격 중",
+        "intensity": 6.2,
+        "severity": "high",
+        "lastUpdate": "2025-10-10T02:00:00Z",
+        "description": "카불 IS-K 테러"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [69.05, 34.70],
+            [69.30, 34.70],
+            [69.30, 34.45],
+            [69.05, 34.45],
+            [69.05, 34.70]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "mosul",
+        "name": "모술",
+        "country": "이라크",
+        "status": "tension",
+        "status_ko": "긴장 고조",
+        "intensity": 5.0,
+        "severity": "medium",
+        "lastUpdate": "2025-10-10T01:30:00Z",
+        "description": "모술 IS 잔당 소탕 작전"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [43.00, 36.50],
+            [43.25, 36.50],
+            [43.25, 36.25],
+            [43.00, 36.25],
+            [43.00, 36.50]
+          ]
+        ]
       }
     }
   ]
